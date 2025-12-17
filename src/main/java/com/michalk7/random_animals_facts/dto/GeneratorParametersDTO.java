@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @NoArgsConstructor
-public class GeneratorParametersDTO {
+public  class GeneratorParametersDTO {
 
     @NotNull(message = "Animal Type is mandatory")
     private String animalType;

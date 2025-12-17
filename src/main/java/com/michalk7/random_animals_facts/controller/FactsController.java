@@ -25,7 +25,7 @@ public class FactsController {
     }
 
     @PostMapping("/generate")
-    public String generateFacts(@Valid @ModelAttribute("callApiForFacts")GeneratorParametersDTO generatorParametersDTO,
+    public String generateFacts(@Valid @ModelAttribute("generatorParameters")GeneratorParametersDTO generatorParametersDTO,
                                 BindingResult bindingResult, Model model, RedirectAttributes redirectAttrs) {
         if(bindingResult.hasErrors()) {
             redirectAttrs.addFlashAttribute("generatorParameters", generatorParametersDTO);
